@@ -9,7 +9,7 @@ import {
   FlatList,
   SafeAreaView,
 } from "react-native";
-import { fetchProducts } from "./Actions/Action";
+import { fetchProducts } from "../Actions/Action";
 
 const HomeP = () => {
   const { data, isLoader, isError } = useSelector((state) => state?.product);

@@ -1,5 +1,5 @@
-import { fetchProducts } from "../ReduxScreens/Actions/Action";
 import { createSlice } from "@reduxjs/toolkit";
+import { fetchProducts } from "../Actions/Action";
 
 const ProductSlice = createSlice({
   name: "Product",
