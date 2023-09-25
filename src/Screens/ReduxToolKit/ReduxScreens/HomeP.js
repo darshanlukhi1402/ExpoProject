@@ -33,14 +33,7 @@ const HomeP = () => {
           style={{ marginTop: 15 }}
           renderItem={({ item }) => {
             return (
-              <View
-                style={{
-                  backgroundColor: item,
-                  width: 150,
-                  alignSelf: "center",
-                  margin: 10,
-                }}
-              >
+              <View style={styles.ViewStyle}>
                 <Text>{item?.id}</Text>
                 <Text>{item?.email}</Text>
                 <Text>{item?.phone}</Text>
@@ -63,5 +56,11 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     padding: 10,
     marginTop: 20,
+  },
+  ViewStyle: {
+    backgroundColor: item,
+    width: 150,
+    alignSelf: "center",
+    margin: 10,
   },
 });
