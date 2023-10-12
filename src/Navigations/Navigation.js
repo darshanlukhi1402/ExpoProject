@@ -8,16 +8,15 @@ import Payment from "../Screens/Payment";
 import { Provider } from "react-redux";
 import HomeP from "../Screens/ReduxToolKit/ReduxScreens/HomeP";
 import { store } from "../Screens/ReduxToolKit/store";
+import Flexwrap from "../Screens/Flexwrap";
 
 const Navigation = () => {
   const Stack = createNativeStackNavigator();
   return (
     <Provider store={store}>
       <NavigationContainer>
-        <Stack.Navigator
-          screenOptions={{ headerShown: false }}
-          initialRouteName="HomeP"
-        >
+        <Stack.Navigator screenOptions={{ headerShown: false }}>
+          <Stack.Screen name="Flexwrap" component={Flexwrap} />
           <Stack.Screen name="HomeP" component={HomeP} />
           <Stack.Screen name="Payment" component={Payment} />
           <Stack.Screen name="Auth" component={Auth} />

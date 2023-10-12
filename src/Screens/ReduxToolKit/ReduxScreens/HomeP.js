@@ -58,7 +58,6 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   ViewStyle: {
-    backgroundColor: item,
     width: 150,
     alignSelf: "center",
     margin: 10,
